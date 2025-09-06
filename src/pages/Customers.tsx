@@ -128,49 +128,6 @@ export default function Customers() {
         </CardContent>
       </Card>
 
-      {/* Customer Stats */}
-      <div className="grid gap-4 md:grid-cols-4">
-        <Card className="shadow-card">
-          <CardContent className="pt-6">
-            <div className="flex items-center">
-              <div className="space-y-1">
-                <p className="text-sm font-medium text-muted-foreground">Total Customers</p>
-                <p className="text-2xl font-bold">{customers.length}</p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-        <Card className="shadow-card">
-          <CardContent className="pt-6">
-            <div className="flex items-center">
-              <div className="space-y-1">
-                <p className="text-sm font-medium text-muted-foreground">Active Customers</p>
-                <p className="text-2xl font-bold">{customers.filter(c => c.status === "Active").length}</p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-        <Card className="shadow-card">
-          <CardContent className="pt-6">
-            <div className="flex items-center">
-              <div className="space-y-1">
-                <p className="text-sm font-medium text-muted-foreground">VIP Customers</p>
-                <p className="text-2xl font-bold">{customers.filter(c => c.status === "VIP").length}</p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-        <Card className="shadow-card">
-          <CardContent className="pt-6">
-            <div className="flex items-center">
-              <div className="space-y-1">
-                <p className="text-sm font-medium text-muted-foreground">Total Revenue</p>
-                <p className="text-2xl font-bold">$12,825</p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-      </div>
 
       {/* Customers List */}
       <div className="grid gap-4">
