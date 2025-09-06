@@ -131,10 +131,6 @@ export default function Sales() {
           <Button variant="outline">
             Export Data
           </Button>
-          <Button className="bg-gradient-primary text-white">
-            <TrendingUp className="h-4 w-4 mr-2" />
-            View Analytics
-          </Button>
         </div>
       </div>
 
@@ -216,23 +212,6 @@ export default function Sales() {
         </Card>
       </div>
 
-      {/* Sales Chart Placeholder */}
-      <Card className="shadow-card">
-        <CardHeader>
-          <CardTitle>Sales Trend</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="h-64 bg-gradient-secondary rounded-lg flex items-center justify-center">
-            <div className="text-center">
-              <TrendingUp className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
-              <h3 className="text-lg font-semibold mb-2">Sales Analytics</h3>
-              <p className="text-muted-foreground">
-                Detailed sales charts and analytics will be displayed here
-              </p>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
 
       {/* Empty State */}
       {filteredOrders.length === 0 && (

@@ -83,10 +83,6 @@ export default function Dashboard() {
             <Eye className="h-4 w-4 mr-2" />
             View Reports
           </Button>
-          <Button size="sm">
-            <TrendingUp className="h-4 w-4 mr-2" />
-            Analytics
-          </Button>
         </div>
       </div>
 
@@ -143,10 +139,6 @@ export default function Dashboard() {
             <Button className="w-full justify-start" variant="outline">
               <ShoppingCart className="h-4 w-4 mr-2" />
               View Orders
-            </Button>
-            <Button className="w-full justify-start bg-gradient-primary text-white hover:opacity-90">
-              <TrendingUp className="h-4 w-4 mr-2" />
-              View Analytics
             </Button>
           </CardContent>
         </Card>
