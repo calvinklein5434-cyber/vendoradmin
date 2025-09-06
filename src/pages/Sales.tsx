@@ -9,40 +9,6 @@ import { DashboardCard } from "@/components/DashboardCard";
 export default function Sales() {
   const [searchTerm, setSearchTerm] = useState("");
 
-  const salesStats = [
-    {
-      title: "Total Sales",
-      value: "$24,567",
-      description: "this month",
-      icon: <DollarSign className="h-4 w-4" />,
-      trend: "up" as const,
-      trendValue: "18%"
-    },
-    {
-      title: "Orders",
-      value: "156",
-      description: "this month",
-      icon: <ShoppingCart className="h-4 w-4" />,
-      trend: "up" as const,
-      trendValue: "12"
-    },
-    {
-      title: "Average Order",
-      value: "$157.48",
-      description: "per order",
-      icon: <TrendingUp className="h-4 w-4" />,
-      trend: "up" as const,
-      trendValue: "5%"
-    },
-    {
-      title: "Conversion Rate",
-      value: "3.2%",
-      description: "visitors to sales",
-      icon: <Eye className="h-4 w-4" />,
-      trend: "up" as const,
-      trendValue: "0.8%"
-    }
-  ];
 
   const orders = [
     {
@@ -134,12 +100,6 @@ export default function Sales() {
         </div>
       </div>
 
-      {/* Sales Stats */}
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-        {salesStats.map((stat, index) => (
-          <DashboardCard key={index} {...stat} />
-        ))}
-      </div>
 
       {/* Orders Section */}
       <div className="space-y-4">
